@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7477F7701F5AECAB00811E60 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7477F76F1F5AECAB00811E60 /* ShadowView.swift */; };
+		7477F7721F5AECF700811E60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7477F7711F5AECF700811E60 /* Constants.swift */; };
+		7477F7741F5AEDD600811E60 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7477F7731F5AEDD600811E60 /* RoundButton.swift */; };
+		7477F7761F5AEE3C00811E60 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7477F7751F5AEE3C00811E60 /* CustomTextField.swift */; };
+		7477F7781F5AEEB600811E60 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7477F7771F5AEEB600811E60 /* CustomButton.swift */; };
 		74E75FA61F52FA8A00373936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E75FA51F52FA8A00373936 /* AppDelegate.swift */; };
 		74E75FA81F52FA8A00373936 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E75FA71F52FA8A00373936 /* SignInVC.swift */; };
 		74E75FAB1F52FA8A00373936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E75FA91F52FA8A00373936 /* Main.storyboard */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		249B83B382859481029AED54 /* Pods_FirebaseSocialNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSocialNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6DAE98B165674E3D53F3FC /* Pods-FirebaseSocialNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSocialNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSocialNetwork/Pods-FirebaseSocialNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		7477F76F1F5AECAB00811E60 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		7477F7711F5AECF700811E60 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7477F7731F5AEDD600811E60 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		7477F7751F5AEE3C00811E60 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7477F7771F5AEEB600811E60 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		74E75FA21F52FA8A00373936 /* FirebaseSocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E75FA51F52FA8A00373936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E75FA71F52FA8A00373936 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -51,6 +61,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7477F76B1F5AEC6800811E60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74E75FA71F52FA8A00373936 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7477F76C1F5AEC7200811E60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7477F76F1F5AECAB00811E60 /* ShadowView.swift */,
+				7477F7731F5AEDD600811E60 /* RoundButton.swift */,
+				7477F7751F5AEE3C00811E60 /* CustomTextField.swift */,
+				7477F7771F5AEEB600811E60 /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7477F76D1F5AEC7B00811E60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7477F76E1F5AEC8100811E60 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7477F7711F5AECF700811E60 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		74E75F991F52FA8A00373936 = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +116,11 @@
 		74E75FA41F52FA8A00373936 /* FirebaseSocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				7477F76E1F5AEC8100811E60 /* Util */,
+				7477F76D1F5AEC7B00811E60 /* Model */,
+				7477F76C1F5AEC7200811E60 /* View */,
+				7477F76B1F5AEC6800811E60 /* Controller */,
 				74E75FA51F52FA8A00373936 /* AppDelegate.swift */,
-				74E75FA71F52FA8A00373936 /* SignInVC.swift */,
 				74E75FA91F52FA8A00373936 /* Main.storyboard */,
 				74E75FAC1F52FA8A00373936 /* Assets.xcassets */,
 				74E75FAE1F52FA8A00373936 /* LaunchScreen.storyboard */,
@@ -215,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7477F7701F5AECAB00811E60 /* ShadowView.swift in Sources */,
+				7477F7741F5AEDD600811E60 /* RoundButton.swift in Sources */,
+				7477F7761F5AEE3C00811E60 /* CustomTextField.swift in Sources */,
 				74E75FA81F52FA8A00373936 /* SignInVC.swift in Sources */,
+				7477F7781F5AEEB600811E60 /* CustomButton.swift in Sources */,
 				74E75FA61F52FA8A00373936 /* AppDelegate.swift in Sources */,
+				7477F7721F5AECF700811E60 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
