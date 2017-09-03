@@ -128,15 +128,50 @@
                     <connections>
                         <outlet property="emailTextField" destination="xl4-m1-h2t" id="kWj-rO-6dQ"/>
                         <outlet property="passwordTextField" destination="wTh-nl-bKo" id="b8t-dv-Epr"/>
+                        <segue destination="ONm-v8-OSi" kind="show" identifier="goToFeed" id="9bN-sk-Xm3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
         </scene>
+        <!--FeedVC-->
+        <scene sceneID="F1J-6w-9IT">
+            <objects>
+                <viewController id="ONm-v8-OSi" customClass="FeedVC" customModule="FirebaseSocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GXU-dN-J1M"/>
+                        <viewControllerLayoutGuide type="bottom" id="CvZ-Bb-151"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DhC-G0-X2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw2-iC-01f">
+                                <rect key="frame" x="141" y="301.5" width="92" height="65"/>
+                                <state key="normal" image="sign-out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="ONm-v8-OSi" eventType="touchUpInside" id="wbN-ei-PAj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22161358589999999" green="0.33941519260000003" blue="0.58011728529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nw2-iC-01f" firstAttribute="centerX" secondItem="DhC-G0-X2i" secondAttribute="centerX" id="SdV-Xr-G5d"/>
+                            <constraint firstItem="Nw2-iC-01f" firstAttribute="centerY" secondItem="DhC-G0-X2i" secondAttribute="centerY" id="VP4-8X-drj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cY-mN-yMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="175"/>
+        </scene>
     </scenes>
     <resources>
         <image name="devslopes-logo" width="150" height="94"/>
         <image name="f" width="352" height="328"/>
+        <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
