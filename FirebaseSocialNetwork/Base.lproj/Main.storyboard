@@ -89,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="67.5" width="315" height="57"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgd-Yp-DkS" customClass="CustomButton" customModule="FirebaseSocialNetwork" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="134.5" width="315" height="57.5"/>
@@ -97,6 +97,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVe-Re-Snq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -122,6 +125,10 @@
                             <constraint firstAttribute="trailing" secondItem="KvX-OF-iK1" secondAttribute="trailing" constant="30" id="xPJ-RA-GWM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="xl4-m1-h2t" id="kWj-rO-6dQ"/>
+                        <outlet property="passwordTextField" destination="wTh-nl-bKo" id="b8t-dv-Epr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
